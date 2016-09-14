@@ -6,8 +6,8 @@
 
 import React from 'react';
 
-import SearchBar from './SearchBar';
-import Table from './table';
+import SearchBar from './SearchableTable/SearchBar';
+import Table from './SearchableTable/Table';
 
 
 
