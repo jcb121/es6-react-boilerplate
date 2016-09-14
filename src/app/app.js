@@ -9,4 +9,4 @@ import SearchableTable from './SearchableTable';
 import {data} from './data';
 
 // Filterable CheatSheet Component
-ReactDOM.render( <SearchableTable data={data}/>, document.getElementById('searchableTable') );
+ReactDOM.render( <div><SearchableTable data={data}/></div>, document.getElementById('searchableTable') );
