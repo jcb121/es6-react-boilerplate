@@ -47,6 +47,7 @@ gulp.task('deploy', function (){
 gulp.task('watch', function () {
 	gulp.watch(['./src/**/*.js'], ['scripts']);
 	gulp.watch(['./src/**/*.scss'], ['sass']);
+	gulp.watch(['./src/**/*.html'], ['html']);
 });
 
 gulp.task('connect', function() {
