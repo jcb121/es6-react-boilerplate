@@ -1,0 +1,88 @@
+<head>
+	
+	<style>
+		body{
+			background:#eeeeee;
+		}
+		.accordian {
+			position:relative;
+			max-width:300px
+		}
+		.accordian .section{		
+			min-height: 40px;
+			background:white;
+			
+			max-height:80px;
+			overflow:hidden;
+			
+			padding-bottom:16px;
+		}
+		.accordian .content{
+			margin:16px; /* useful for margin collapse on header tags*/
+		}
+		
+		.accordian .shadow{
+			position:absolute;
+			height:16px;
+			bottom:0px;
+			left:0px;
+			right:0px;
+			background:white;
+			opacity:0.8;
+		}
+		
+		.accordian .hover{
+			
+			position:absolute;
+			top:0px;
+			bottom:0px;
+			left:0px;
+			right:0px;
+			
+			cursor:pointer;
+			background:black;
+			opacity:0;
+			
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+			justify-content:center;
+		}
+		.accordian .hover .text{
+			color:white;
+			font-size:20px;
+			opacity:1;
+		}
+		.accordian:hover .hover{
+			opacity:0.5;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="accordian">
+		<div class="section">
+			<div class="content">
+				<h1>Title</h1>
+				<p>
+					Lipsum qweqwe uirtuihert eruithieruth
+					iuerthuierth eruithieruth euirthieruth
+					Lipsum qweqwe uirtuihert eruithieruth
+					iuerthuierth eruithieruth euirthieruth
+					Lipsum qweqwe uirtuihert eruithieruth
+					iuerthuierth eruithieruth euirthieruth
+					Lipsum qweqwe uirtuihert eruithieruth
+					iuerthuierth eruithieruth euirthieruth
+					Lipsum qweqwe uirtuihert eruithieruth
+					iuerthuierth eruithieruth euirthieruth
+				</p>
+			</div>
+			<div class="shadow">
+		
+			</div>
+			<div class="hover">
+				<p class="text">Click to read more</p>
+			</div>
+		</div>
+	</div>
+</body>
